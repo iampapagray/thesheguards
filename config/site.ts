@@ -3,7 +3,7 @@ export type SiteConfig = typeof siteConfig
 export const siteConfig = {
   name: "The She Guards",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Sometimes the best man for the job is not a man. We provide excellent security services.",
   mainNav: [
     // {
     //   title: "Home",
