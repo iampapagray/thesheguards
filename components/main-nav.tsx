@@ -17,7 +17,7 @@ export function MainNav({ items }: MainNavProps) {
       <Link href="/" className="flex items-center space-x-2">
         <Icons.logo className="h-6 w-6" />
         <span className={cn(
-          "font-bold hidden md:inline-block uppercase",
+          "hidden uppercase md:inline-block",
           archivo.className
         )}>{siteConfig.name}</span>
       </Link>
