@@ -5,6 +5,7 @@ import { NavItem } from "@/types/nav"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
+import { archivo } from "@/lib/fonts"
 
 interface MainNavProps {
   items?: NavItem[]
@@ -15,7 +16,10 @@ export function MainNav({ items }: MainNavProps) {
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="flex items-center space-x-2">
         <Icons.logo className="h-6 w-6" />
-        <span className=" font-bold hidden md:inline-block">{siteConfig.name}</span>
+        <span className={cn(
+          "font-bold hidden md:inline-block uppercase",
+          archivo.className
+        )}>{siteConfig.name}</span>
       </Link>
       {items?.length ? (
         <nav className="flex gap-6">
