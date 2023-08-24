@@ -11,7 +11,7 @@ export const siteConfig = {
     // },
   ],
   links: {
-    twitter: "https://twitter.com/thesheguards",
+    twitter: "https://twitter.com/poizyn3",
     mail: "mailto:thesheguards@gmail.com",
     phone: "tel:+233555209993",
     github: '',
