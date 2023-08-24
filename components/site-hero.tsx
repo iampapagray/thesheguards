@@ -16,7 +16,7 @@ export function SiteHero(){
             vigilance<span className="text-primary">.</span>
           </h1>
           <p className="">
-            marketing and communications investments of the world&apos;s largest and most creative clients accross multiple channels
+            marketing and communications investments of the world&apos;s largest and most creative clients accross channels
           </p>
         </div>
         <div className="flex h-1/2 w-full flex-col items-start justify-center lg:h-full lg:w-1/2">
