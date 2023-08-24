@@ -1,13 +1,20 @@
 import Link from "next/link"
 
+import { archivo } from "@/lib/fonts"
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import { SiteHero } from "@/components/site-hero"
 
 export default function IndexPage() {
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+    <main className="grid items-center 2xl:container">
+      <SiteHero />
       <div className="flex max-w-[980px] flex-col items-start gap-2">
-        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
+        <h1 className={cn(
+          "text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl",
+          archivo.className
+        )}>
           Beautifully designed components <br className="hidden sm:inline" />
           built with Radix UI and Tailwind CSS.
         </h1>
@@ -16,24 +23,6 @@ export default function IndexPage() {
           into your apps. Free. Open Source. And Next.js 13 Ready.
         </p>
       </div>
-      <div className="flex gap-4">
-        <Link
-          href={siteConfig.links.docs}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants()}
-        >
-          Documentation
-        </Link>
-        <Link
-          target="_blank"
-          rel="noreferrer"
-          href={siteConfig.links.github}
-          className={buttonVariants({ variant: "outline" })}
-        >
-          GitHub
-        </Link>
-      </div>
-    </section>
+    </main>
   )
 }

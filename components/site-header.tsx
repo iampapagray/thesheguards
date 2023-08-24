@@ -8,13 +8,14 @@ import { ThemeToggle } from "@/components/theme-toggle"
 
 export function SiteHeader() {
   return (
-    <header className="bg-background sticky top-0 z-40 w-full border-b">
+    <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
         <MainNav items={siteConfig.mainNav} />
+
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
             <Link
-              href={siteConfig.links.github}
+              href={siteConfig.links.instagram}
               target="_blank"
               rel="noreferrer"
             >
@@ -24,8 +25,8 @@ export function SiteHeader() {
                   variant: "ghost",
                 })}
               >
-                <Icons.gitHub className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
+                <Icons.instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
               </div>
             </Link>
             <Link
@@ -39,11 +40,41 @@ export function SiteHeader() {
                   variant: "ghost",
                 })}
               >
-                <Icons.twitter className="h-5 w-5 fill-current" />
+                <Icons.twitter className="h-5 w-5 " />
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
-            <ThemeToggle />
+            <Link
+              href={siteConfig.links.mail}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.mail className="h-5 w-5" />
+                <span className="sr-only">Email</span>
+              </div>
+            </Link>
+            <Link
+              href={siteConfig.links.phone}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.phone className="h-5 w-5" />
+                <span className="sr-only">Phone</span>
+              </div>
+            </Link>
+            {/* <ThemeToggle /> */}
           </nav>
         </div>
       </div>
