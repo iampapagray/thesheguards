@@ -13,7 +13,7 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/thesheguards",
     mail: "mailto:thesheguards@gmail.com",
-    phone: "tel:thesheguards@gmail.com",
+    phone: "tel:+233555209993",
     github: '',
     docs: "https://ui.shadcn.com",
     instagram: "https://instagram.com/thesheguards",
