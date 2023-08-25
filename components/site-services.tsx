@@ -7,7 +7,7 @@ export function SiteServices() {
   return (
     <section className="relative flex w-full flex-col ">
       <div className={cn(
-        "flex w-full flex-col items-start justify-between border-b py-8 lg:flex-row lg:items-end lg:pb-8 lg:pt-20",
+        "flex w-full flex-col items-start justify-between border-b py-8 lg:flex-row lg:items-end lg:pb-8 lg:pt-20 bg-primary lg:bg-transparent text-white lg:text-black",
         styles.paddingX
       )}>
         <h2
@@ -24,7 +24,7 @@ export function SiteServices() {
       </div>
 
       <div className="grid w-full grid-cols-2">
-        <div className="col-span-2 w-full border-b bg-primary text-white lg:col-span-1 lg:border-r lg:bg-transparent lg:text-black">
+        <div className="col-span-2 w-full border-b lg:col-span-1 lg:border-r">
           <Service 
             title="meeting security"
             description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
@@ -38,7 +38,7 @@ export function SiteServices() {
             summary="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim."
           />
         </div>
-        <div className="col-span-2 border-b bg-primary text-white lg:col-span-1 lg:border-r lg:bg-transparent lg:text-black">
+        <div className="col-span-2 border-b lg:col-span-1 lg:border-r ">
           <Service 
             title="wedding security"
             description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
