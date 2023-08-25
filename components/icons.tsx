@@ -6,11 +6,12 @@ import {
   Instagram,
   Mail,
   PhoneCall,
-  type Icon as LucideIcon,
+  ArrowRight,
+  // type Icon as LucideIcon,
 } from "lucide-react"
 import Image from "next/image"
 
-export type Icon = LucideIcon
+// export type Icon = LucideIcon
 
 export const Icons = {
   sun: SunMedium,
@@ -19,6 +20,7 @@ export const Icons = {
   instagram: Instagram,
   mail:Mail,
   phone: PhoneCall,
+  longArrow: ArrowRight,
   logo: (props: LucideProps) => (
     <Image
       src="https://res.cloudinary.com/dxpsehxqj/image/upload/ar_1:1,bo_0px_solid_rgb:effa00,c_fill,e_background_removal,fl_preserve_transparency,g_auto,r_max,w_1000/v1692784587/core/zqtdtivzeqaj3gatiloo.jpg"

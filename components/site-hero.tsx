@@ -18,7 +18,7 @@ export function SiteHero(){
         </div>
         <div className="flex h-1/2 w-full flex-col items-start justify-center lg:h-full lg:w-1/2">
           <Image
-            // src="https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744071/samples/animals/three-dogs.jpg"
+            // src="https://res.cloudinary.com/dxpsehxqj/image/upload/v1692995982/she_group_llyrdy.jpg"
             src="https://res.cloudinary.com/dxpsehxqj/image/upload/v1692990171/group_photo_vvpcyq.jpg"
             alt="video"
             height={500}
