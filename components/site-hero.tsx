@@ -18,15 +18,16 @@ export function SiteHero(){
         </div>
         <div className="flex h-1/2 w-full flex-col items-start justify-center lg:h-full lg:w-1/2">
           <Image
-            src="https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744071/samples/animals/three-dogs.jpg"
+            // src="https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744071/samples/animals/three-dogs.jpg"
+            src="https://res.cloudinary.com/dxpsehxqj/image/upload/v1692990171/group_photo_vvpcyq.jpg"
             alt="video"
             height={500}
             width={500}
-            className='h-full w-full'
+            className='h-full w-full object-cover'
           />
         </div>
       </div>
-      <div className="grid lg:h-1/3 w-full grid-cols-1 lg:grid-cols-3">
+      <div className="grid w-full grid-cols-1 lg:h-1/3 lg:grid-cols-3">
         <div className="border-b p-4 px-8 lg:px-14 lg:py-10">
           <SiteValue
             head={2500}

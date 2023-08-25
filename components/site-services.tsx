@@ -22,13 +22,13 @@ export function SiteServices() {
         </div>
       </div>
 
-      {/* <div className="grid-col-2 grid">
+      <div className="grid-col-2 grid">
         <div className="flex">meeting security</div>
         <div className="flex">escort services</div>
         <div className="flex">wedding security</div>
         <div className="flex">party security</div>
         <div className="col-span-2 ">all events</div>
-      </div> */}
+      </div>
     </section>
   )
 }
