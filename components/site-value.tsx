@@ -17,7 +17,7 @@ export function SiteValue({head, title, desc}: Props) {
         {head}
       </h3>
       <h5 className={cn(
-        "text-lg text-primary md:text-xl lg:text-2xl my-1 md:my-4",
+        "my-1 text-lg text-primary md:my-4 md:text-xl lg:text-2xl",
         archivo.className
       )}>
         {title}

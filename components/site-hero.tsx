@@ -8,7 +8,7 @@ import { HeroHeading } from "./hero-heading";
 export function SiteHero(){
 
   return (
-    <section className="flex h-fit flex-col lg:h-[95vh]">
+    <section className="relative flex h-fit flex-col lg:h-[95vh]">
       <div className="flex h-2/3 flex-col border-b lg:flex-row">
         <div className="lg:py-auto flex h-1/2 w-full flex-col items-start justify-center gap-4 border-b p-8 lg:h-full lg:w-1/2 lg:gap-16 lg:border-b-0 lg:border-r lg:px-14">
           <HeroHeading />
@@ -26,7 +26,7 @@ export function SiteHero(){
           />
         </div>
       </div>
-      <div className="grid h-1/3 w-full grid-cols-1 lg:grid-cols-3">
+      <div className="grid lg:h-1/3 w-full grid-cols-1 lg:grid-cols-3">
         <div className="border-b p-4 px-8 lg:px-14 lg:py-10">
           <SiteValue
             head={2500}

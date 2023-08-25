@@ -4,7 +4,7 @@ import styles from "@/styles/styles"
 
 export function SiteServices() {
   return (
-    <section className="flex h-screen w-full flex-col ">
+    <section className="relative flex h-screen w-full flex-col ">
       <div className={cn(
         "flex w-full flex-col items-start justify-between border-b py-8 lg:flex-row lg:items-end lg:pb-8 lg:pt-20",
         styles.paddingX
