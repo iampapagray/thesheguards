@@ -11,7 +11,7 @@ export default function IndexPage() {
   return (
     <main className="grid items-center 2xl:container">
       <SiteHero />
-      {/* <SiteServices /> */}
+      <SiteServices />
       {/* <div className="flex max-w-[980px] flex-col items-start gap-2">
         <h1 className={cn(
           "text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl",
