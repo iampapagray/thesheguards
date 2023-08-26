@@ -6,31 +6,12 @@ import { archivo } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 
 import { TextSpan } from "./text-span"
+import { container, item } from "@/lib/animations"
 
 export function HeroHeading() {
   const firstWord = "integrity".split("")
   const secondWord = "transparency".split("")
   const thirdWord = "vigilance".split("")
-
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.05,
-        staggerChildren: 0.2,
-      },
-    },
-  }
-
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  }
 
   return (
     <motion.div

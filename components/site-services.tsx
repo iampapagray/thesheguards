@@ -7,7 +7,7 @@ export function SiteServices() {
   return (
     <section className="relative flex w-full flex-col ">
       <div className={cn(
-        "flex w-full flex-col items-start justify-between border-b py-8 lg:flex-row lg:items-end lg:pb-8 lg:pt-20 bg-primary lg:bg-transparent text-white lg:text-black",
+        "flex w-full flex-col items-start justify-between border-b bg-primary py-8 text-white lg:flex-row lg:items-end lg:bg-transparent lg:pb-8 lg:pt-20 lg:text-black",
         styles.paddingX
       )}>
         <h2
