@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useAnimationControls, transform } from "framer-motion"
+import { motion, useAnimationControls } from "framer-motion"
 import { useState } from "react";
 
 interface Props {

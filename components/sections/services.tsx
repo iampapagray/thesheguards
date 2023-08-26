@@ -1,9 +1,9 @@
 import { archivo } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import styles from "@/styles/styles"
-import { Service } from "./service"
+import { Service } from "../service"
 
-export function SiteServices() {
+export function Services() {
   return (
     <section className="relative flex w-full flex-col ">
       <div className={cn(
