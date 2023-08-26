@@ -1,3 +1,4 @@
+import { Featured } from "@/components/sections/featured"
 import { Hero } from "@/components/sections/hero"
 import { Services } from "@/components/sections/services"
 
@@ -6,6 +7,7 @@ export default function IndexPage() {
     <main className="grid items-center 2xl:container">
       <Hero />
       <Services />
+      <Featured />
     </main>
   )
 }

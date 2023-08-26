@@ -18,7 +18,7 @@ export function Services() {
 
         <div className="flex lg:max-w-lg">
           <p className=" ">
-            The SheGuards are a top-notch protection agency. The SheGuards are a top-notch protection agency. The SheGuards are a top-notch protection agency.
+            The SheGuards are top-notch protection experts. The SheGuards are a top-notch protection agency. The SheGuards are a top-notch protection agency.
           </p>
         </div>
       </div>
@@ -52,7 +52,7 @@ export function Services() {
             summary="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est."
           />
         </div>
-        <div className="col-span-2 ">all events</div>
+        {/* <div className="col-span-2 ">all events</div> */}
       </div>
     </section>
   )
