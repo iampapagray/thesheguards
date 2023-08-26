@@ -1,21 +1,16 @@
-# next-template
+# The She Guards
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+A landing page website for TheSheGuards, an all female security agency.
 
-## Usage
+## Built With
 
-```bash
-npx create-next-app -e https://github.com/shadcn/next-template
-```
-
-## Features
-
-- Next.js 13 App Directory
+- Next.js 13
+- Typescript
 - Radix UI Primitives
 - Tailwind CSS
 - Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Tailwind CSS class sorting, merging and linting.
+- Tailwind CSS
+- Framer Motion
 
 ## License
 
