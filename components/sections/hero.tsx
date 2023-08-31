@@ -4,6 +4,7 @@ import { Analytics } from "../analytics";
 import Image from "next/image";
 import { HeroHeading } from "../hero-heading";
 import { JustReveal } from "../animators/reveal-only";
+import ShuffleGrid from "../shuffle-grid";
 
 export function Hero(){
 
@@ -18,7 +19,7 @@ export function Hero(){
             </p>
           </JustReveal>
         </div>
-        <div className="flex h-1/2 w-full flex-col items-start justify-center lg:h-full lg:w-1/2">
+        {/* <div className="flex h-1/2 w-full flex-col items-start justify-center lg:h-full lg:w-1/2">
           <Image
             // src="https://res.cloudinary.com/dxpsehxqj/image/upload/v1692995982/she_group_llyrdy.jpg"
             src="https://res.cloudinary.com/dxpsehxqj/image/upload/v1692990171/group_photo_vvpcyq.jpg"
@@ -27,6 +28,9 @@ export function Hero(){
             width={500}
             className='h-full w-full object-cover'
           />
+        </div> */}
+        <div className="flex h-1/2 w-full lg:h-full lg:w-1/2">
+          <ShuffleGrid />
         </div>
       </div>
       <div className="grid w-full grid-cols-1 lg:h-1/3 lg:grid-cols-3">
