@@ -4,6 +4,8 @@ import { archivo } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
 import { Icons } from "./icons"
+import { JustReveal } from "./animators/reveal-only"
+import { RevealAndSlide } from "./animators/full-reveal"
 
 export function Features() {
   const features = ["disruption","innovation","transparency"]
@@ -18,23 +20,26 @@ export function Features() {
 
   return (
     <div className="grid w-full grid-cols-2 border-b">
-      <div className="col-span-2 flex flex-col  lg:col-span-1 lg:border-r">
+      <div className="col-span-2 flex flex-col lg:col-span-1 lg:border-r">
         {features.map((feat, i) => {
           return (
+            <JustReveal width="100%">
             <div
               className={cn(
                 "group flex w-full items-center gap-4 pl-8 lg:pl-14",
-                i < 2 ? 'border-b':'lg:border-none border-b',
+                i < 2 ? 'border-b':'border-b lg:border-none',
                 active == i ? 'text-primary' : ''
               )}
               onMouseEnter={()=> setActive(i)}
             >
+
               <h5 className={cn(
-                "my-2 text-lg lg:my-4 md:text-xl lg:text-3xl",
+                "my-2 text-lg md:text-xl lg:my-4 lg:text-3xl",
                 archivo.className,
               )}>
                 {feat}
               </h5>
+
               <Icons.longArrow className={cn(
                 "hidden stroke-[4px] ",
                 active == i ? 'lg:flex' : ''
@@ -44,11 +49,14 @@ export function Features() {
                 active == i ? 'flex lg:hidden' : ''
               )} />
             </div>
+            </JustReveal>
           )
         })}
       </div>
       <div className="col-span-2 flex items-center px-8 lg:col-span-1 lg:pl-4 lg:pr-14">
-        <p>{descriptions[active]}</p>
+        <RevealAndSlide>
+          <p>{descriptions[active]}</p>
+        </RevealAndSlide>
       </div>
     </div>
   )
