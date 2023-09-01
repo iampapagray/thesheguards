@@ -7,6 +7,7 @@ import {
   Mail,
   PhoneCall,
   ArrowRight,
+  ArrowDown,
   // type Icon as LucideIcon,
 } from "lucide-react"
 import Image from "next/image"
@@ -21,6 +22,7 @@ export const Icons = {
   mail:Mail,
   phone: PhoneCall,
   longArrow: ArrowRight,
+  arrowDown: ArrowDown,
   logo: (props: LucideProps) => (
     <Image
       src="https://res.cloudinary.com/dxpsehxqj/image/upload/ar_1:1,bo_0px_solid_rgb:effa00,c_fill,e_background_removal,fl_preserve_transparency,g_auto,r_max,w_1000/v1692784587/core/zqtdtivzeqaj3gatiloo.jpg"

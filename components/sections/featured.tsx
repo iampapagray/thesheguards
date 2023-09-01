@@ -2,6 +2,7 @@ import { archivo } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import styles from "@/styles/styles";
 import Image from "next/image"
+import { Features } from "../features";
 
 export function Featured() {
   return (
@@ -31,8 +32,8 @@ export function Featured() {
             width={500}
             className='h-[250px] w-full object-cover pt-8'
           />
-        
       </div>
+      <Features />
     </section>
   )
 }
