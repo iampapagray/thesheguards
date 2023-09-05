@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import styles from "@/styles/styles"
 
-// import { Carousel } from "../animators/carousel";
 import { Icons } from "../icons"
 import { Button } from "../ui/button"
 
@@ -105,7 +104,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="relative flex w-full flex-col pb-20">
+    <section className="relative flex w-full flex-col">
       <div
         className={cn(
           "flex w-full flex-col items-start justify-between border-b bg-primary py-8 text-white lg:flex-row lg:items-end lg:bg-transparent lg:pb-8 lg:pt-20 lg:text-black",
@@ -131,7 +130,6 @@ export function Testimonials() {
         </div>
       </div>
 
-      {/* <Carousel /> */}
       <motion.div
         ref={box}
         className="flex w-screen overflow-hidden border-b lg:w-full"

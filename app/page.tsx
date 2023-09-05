@@ -1,3 +1,4 @@
+import { Contact } from "@/components/sections/contact"
 import { Featured } from "@/components/sections/featured"
 import { Hero } from "@/components/sections/hero"
 import { Services } from "@/components/sections/services"
@@ -10,6 +11,7 @@ export default function IndexPage() {
       <Services />
       <Featured />
       <Testimonials />
+      <Contact />
     </main>
   )
 }
