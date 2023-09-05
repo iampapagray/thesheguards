@@ -18,7 +18,7 @@ const testimonials: testimony[] = [
   {
     name: "Joseph Freeley",
     message:
-      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui. Proident elit quis labore magna ullamco ut est voluptate voluptate laboris nulla dolore Lorem laborum. Excepteur aute eiusmod laboris commodo consectetur duis consectetur nostrud non incididunt proident velit.",
+      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
     role: "Director, KKN Supply Management",
     image:
       "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1692744089/samples/smile.jpg",
@@ -26,7 +26,7 @@ const testimonials: testimony[] = [
   {
     name: "Prince Leilani",
     message:
-      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui. Proident elit quis labore magna ullamco ut est voluptate voluptate laboris nulla dolore Lorem laborum. Excepteur aute eiusmod laboris commodo consectetur duis consectetur nostrud non incididunt proident velit.",
+      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
     role: "Director, KKN Supply Management",
     image:
       "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1692744068/samples/people/smiling-man.jpg",
@@ -34,7 +34,7 @@ const testimonials: testimony[] = [
   {
     name: "Frederick Jones",
     message:
-      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui. Proident elit quis labore magna ullamco ut est voluptate voluptate laboris nulla dolore Lorem laborum. Excepteur aute eiusmod laboris commodo consectetur duis consectetur nostrud non incididunt proident velit.",
+      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
     role: "Director, KKN Supply Management",
     image:
       "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1692744069/samples/bike.jpg",
@@ -42,7 +42,7 @@ const testimonials: testimony[] = [
   {
     name: "Patrick Thomspon",
     message:
-      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui. Proident elit quis labore magna ullamco ut est voluptate voluptate laboris nulla dolore Lorem laborum. Excepteur aute eiusmod laboris commodo consectetur duis consectetur nostrud non incididunt proident velit.",
+      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
     role: "Director, KKN Supply Management",
     image:
       "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1692744065/samples/people/kitchen-bar.jpg",
@@ -58,7 +58,10 @@ export function Carousel() {
   }, [])
 
   return (
-    <motion.div ref={box} className="flex w-full overflow-hidden border-b">
+    <motion.div
+      ref={box}
+      className="flex w-screen overflow-hidden border-b lg:w-full"
+    >
       <motion.div
         drag={"x"}
         dragConstraints={{ right: 0, left: -width }}
@@ -69,7 +72,7 @@ export function Carousel() {
             <motion.div
               key={i}
               className={cn(
-                "h-full min-w-[66%] flex-col border-r last:border-0 py-8",
+                "h-full min-w-[80%] flex-col border-r py-8 last:border-0 lg:min-w-[66%]",
                 styles.paddingX
               )}
             >
