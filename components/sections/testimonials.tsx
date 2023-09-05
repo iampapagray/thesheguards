@@ -88,8 +88,8 @@ export function Testimonials() {
         { x: [currentX, currentX - scrollWidth] },
         { type: "spring", duration: 1 }
       )
+      startX.set(startX.getPrevious() - scrollWidth)
     }
-    startX.set(startX.getPrevious() - scrollWidth)
   }
 
   function scrollRight() {
