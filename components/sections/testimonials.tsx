@@ -57,6 +57,7 @@ const testimonials: testimony[] = [
 export function Testimonials() {
   const [width, setWidth] = useState(0)
   const [scrollWidth, setScrollWidth] = useState(0)
+  const [isPlaying, setIsPlaying] = useState(false)
   const box = useRef<any>()
   const carousel = useRef<any>()
   const startX = motionValue(0)
@@ -68,13 +69,11 @@ export function Testimonials() {
     }, 1500)
 
     function getScrollWidth() {
-      if (width < 600) {
+      if (window.innerWidth < 600) {
         var multiplier = 0.8
       } else {
         var multiplier = 0.66
       }
-      console.log("Mul", multiplier)
-      console.log("Width", width)
       setScrollWidth(
         parseInt((box.current.offsetWidth * multiplier).toFixed(0))
       )
@@ -82,25 +81,24 @@ export function Testimonials() {
   }, [scrollWidth, width])
 
   function scrollLeft() {
-    console.log(width)
-    console.log(scrollWidth)
-    if (Math.abs(startX.get()) < width) {
+    let currentX = startX.get()
+    if (Math.abs(currentX) < width) {
       animate(
         carousel.current,
-        { x: [startX.get(), startX.get() - scrollWidth] },
-        { type: "spring", duration: 2 }
+        { x: [currentX, currentX - scrollWidth] },
+        { type: "spring", duration: 1 }
       )
-      startX.set(startX.getPrevious() - scrollWidth)
     }
+    startX.set(startX.getPrevious() - scrollWidth)
   }
 
   function scrollRight() {
-    console.log(scrollWidth)
-    if (startX.get() != 0) {
+    let currentX = startX.get()
+    if (currentX != 0) {
       animate(
         carousel.current,
-        { x: [startX.get(), startX.get() + scrollWidth] },
-        { type: "spring", duration: 2 }
+        { x: [currentX, currentX + scrollWidth] },
+        { type: "spring", duration: 1 }
       )
       startX.set(startX.getPrevious() + scrollWidth)
     }
