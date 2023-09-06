@@ -1,18 +1,19 @@
+import Image from "next/image"
 import {
-  LucideProps,
-  Moon,
-  SunMedium,
-  Twitter,
-  Instagram,
-  Mail,
-  PhoneCall,
-  ArrowRight,
   ArrowDown,
+  ArrowRight,
   ChevronLeft,
   ChevronRight,
+  HeartHandshake,
   // type Icon as LucideIcon,
+  Instagram,
+  LucideProps,
+  Mail,
+  Moon,
+  PhoneCall,
+  SunMedium,
+  Twitter,
 } from "lucide-react"
-import Image from "next/image"
 
 // export type Icon = LucideIcon
 
@@ -21,12 +22,13 @@ export const Icons = {
   moon: Moon,
   twitter: Twitter,
   instagram: Instagram,
-  mail:Mail,
+  mail: Mail,
   phone: PhoneCall,
   longArrow: ArrowRight,
   arrowDown: ArrowDown,
   right: ChevronRight,
   left: ChevronLeft,
+  love: HeartHandshake,
   logo: (props: LucideProps) => (
     <Image
       src="https://res.cloudinary.com/dxpsehxqj/image/upload/ar_1:1,bo_0px_solid_rgb:effa00,c_fill,e_background_removal,fl_preserve_transparency,g_auto,r_max,w_1000/v1692784587/core/zqtdtivzeqaj3gatiloo.jpg"

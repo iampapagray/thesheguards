@@ -44,11 +44,7 @@ export function Header() {
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
-            <Link
-              href={siteConfig.links.mail}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link href={siteConfig.links.mail} target="_blank" rel="noreferrer">
               <div
                 className={buttonVariants({
                   size: "icon",
