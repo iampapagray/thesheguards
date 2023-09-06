@@ -5,12 +5,13 @@ import { archivo } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import styles from "@/styles/styles"
 
+import { ContactForm } from "../contact-form"
 import { Icons } from "../icons"
 import { Button, buttonVariants } from "../ui/button"
 
 export function Contact() {
   return (
-    <div className="relative flex w-full flex-col">
+    <div className="relative flex w-full flex-col border-b">
       <div
         className={cn(
           "flex w-full flex-col items-start justify-between border-b bg-primary py-8 text-white lg:flex-row lg:items-end lg:bg-transparent lg:pb-8 lg:pt-20 lg:text-black",
@@ -88,6 +89,8 @@ export function Contact() {
           </div>
         </div>
       </div>
+
+      <ContactForm />
     </div>
   )
 }
