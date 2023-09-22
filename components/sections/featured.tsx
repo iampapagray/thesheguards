@@ -35,11 +35,12 @@ export function Featured() {
         </div>
 
         <Image
-          src="https://res.cloudinary.com/dxpsehxqj/image/upload/c_fill,g_auto,h_250,w_970/c_scale/v1692995982/she_group_llyrdy.jpg"
+          // src="https://res.cloudinary.com/dxpsehxqj/image/upload/c_fill,g_auto,h_300,w_970/c_scale/v1692995982/she_group_llyrdy.jpg"
+          src="https://res.cloudinary.com/dxpsehxqj/image/upload/c_fill,g_auto,h_250,w_970/c_scale/v1692990171/group_photo_vvpcyq.jpg"
           alt="video"
-          height={250}
+          height={300}
           width={500}
-          className="h-[250px] w-full object-cover pt-8"
+          className="h-[300px] w-full object-cover pt-8"
         />
       </div>
       <Features />
