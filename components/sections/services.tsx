@@ -24,9 +24,11 @@ export function Services() {
 
         <div className="flex lg:max-w-lg">
           <p className="text-foreground">
-            The SheGuards are top-notch protection experts. The SheGuards are a
-            top-notch protection agency. The SheGuards are a top-notch
-            protection agency.
+            <span className="text-primary">
+              The SheGuards are top-notch, private, all-female security firm.
+            </span>{" "}
+            We are fully licensed, exceptionally and excellently trained, and
+            equiped for duty.
           </p>
         </div>
       </div>
@@ -34,7 +36,7 @@ export function Services() {
       <div className="grid w-full grid-cols-2">
         <div className="col-span-2 w-full border-b lg:col-span-1 lg:border-r">
           <Service
-            title="meeting security"
+            title="official meeting security"
             description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
             summary="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est."
           />
@@ -48,7 +50,7 @@ export function Services() {
         </div>
         <div className="col-span-2 border-b lg:col-span-1 lg:border-r ">
           <Service
-            title="wedding security"
+            title="clubs | pubs | lounge security"
             description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
             summary="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est."
           />
@@ -56,6 +58,13 @@ export function Services() {
         <div className="col-span-2 border-b lg:col-span-1">
           <Service
             title="party security"
+            description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
+            summary="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est."
+          />
+        </div>
+        <div className="col-span-2 border-b">
+          <Service
+            title="airport pickups & all kinds of events"
             description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
             summary="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est."
           />

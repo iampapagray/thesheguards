@@ -16,8 +16,10 @@ export function Hero() {
           <HeroHeading />
           <JustReveal>
             <p className="">
-              marketing and communications investments of the world&apos;s
-              largest and most creative clients accross channels
+              We believe protection and asset management should be grounded on
+              providing world-class security detail that is safe, excellent,
+              effective, reliable and meets the specific needs of the client.
+              <span className="text-primary"> That is who we are!</span>
             </p>
           </JustReveal>
         </div>

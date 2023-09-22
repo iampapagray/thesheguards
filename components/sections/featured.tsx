@@ -27,9 +27,9 @@ export function Featured() {
 
           <div className="flex lg:max-w-lg">
             <p className="text-foreground">
-              The SheGuards are a top-notch protection agency. The SheGuards are
-              a top-notch protection agency. The SheGuards are a top-notch
-              protection agency.
+              With high precision and vigilance, The She Guards, at random
+              intervals search female washrooms throughout events for medical
+              emergencies or illegal drug use.
             </p>
           </div>
         </div>
