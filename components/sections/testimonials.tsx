@@ -24,32 +24,28 @@ const testimonials: testimony[] = [
     message:
       "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
     role: "Director, KKN Supply Management",
-    image:
-      "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1692744089/samples/smile.jpg",
+    image: "",
   },
   {
     name: "Prince Leilani",
     message:
       "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
     role: "Director, KKN Supply Management",
-    image:
-      "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1692744068/samples/people/smiling-man.jpg",
+    image: "",
   },
   {
     name: "Frederick Jones",
     message:
       "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
     role: "Director, KKN Supply Management",
-    image:
-      "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1692744069/samples/bike.jpg",
+    image: "",
   },
   {
     name: "Patrick Thomspon",
     message:
       "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
     role: "Director, KKN Supply Management",
-    image:
-      "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1692744065/samples/people/kitchen-bar.jpg",
+    image: "",
   },
 ]
 

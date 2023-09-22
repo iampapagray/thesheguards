@@ -24,7 +24,7 @@ export function Services() {
 
         <div className="flex lg:max-w-lg">
           <p className="text-foreground">
-            <span className="text-primary">
+            <span className="text-foreground lg:text-primary">
               The SheGuards are top-notch, private, all-female security firm.
             </span>{" "}
             We are fully licensed, exceptionally and excellently trained, and
@@ -38,7 +38,7 @@ export function Services() {
           <Service
             title="official meeting security"
             description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
-            summary="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est."
+            summary="offer advice and instructions to guests."
           />
         </div>
         <div className="col-span-2 w-full border-b lg:col-span-1">

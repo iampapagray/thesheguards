@@ -23,7 +23,7 @@ export function MainNav({ items }: MainNavProps) {
         </span>
         <span
           className={cn(
-            "inline-block w-14 text-xs font-bold uppercase md:hidden",
+            "inline-block w-16 text-xs font-bold uppercase md:hidden",
             archivo.className
           )}
         >

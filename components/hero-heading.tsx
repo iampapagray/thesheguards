@@ -16,7 +16,7 @@ export function HeroHeading() {
 
   return (
     <DelayedReveal>
-      <div className={cn("pb-2 text-4xl lg:text-7xl", archivo.className)}>
+      <div className={cn(`pb-2 text-4xl lg:text-7xl ${archivo.className}`)}>
         <motion.div variants={revealAnimation} className="flex">
           {firstWord.map((char, i) => {
             return <TextSpan key={i}>{char}</TextSpan>
