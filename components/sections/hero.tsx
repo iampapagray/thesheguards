@@ -1,13 +1,14 @@
-import { cn } from "@/lib/utils";
-import { Analytics } from "../analytics";
 // import { TextSpan } from "./text-span";
-import Image from "next/image";
-import { HeroHeading } from "../hero-heading";
-import { JustReveal } from "../animators/reveal-only";
-import ShuffleGrid from "../shuffle-grid";
+import Image from "next/image"
 
-export function Hero(){
+import { cn } from "@/lib/utils"
 
+import { Analytics } from "../analytics"
+import { JustReveal } from "../animators/reveal-only"
+import { HeroHeading } from "../hero-heading"
+import ShuffleGrid from "../shuffle-grid"
+
+export function Hero() {
   return (
     <section className="relative flex h-fit flex-col lg:h-[95vh]">
       <div className="flex h-2/3 flex-col border-b lg:flex-row">
@@ -15,7 +16,8 @@ export function Hero(){
           <HeroHeading />
           <JustReveal>
             <p className="">
-              marketing and communications investments of the world&apos;s largest and most creative clients accross channels
+              marketing and communications investments of the world&apos;s
+              largest and most creative clients accross channels
             </p>
           </JustReveal>
         </div>
@@ -36,24 +38,25 @@ export function Hero(){
       <div className="grid w-full grid-cols-1 lg:h-1/3 lg:grid-cols-3">
         <div className="border-b p-4 px-8 lg:px-14 lg:py-10">
           <Analytics
-            head={2500}
-            title={'protected'}
+            head={4700}
+            title={"solo + collab protected"}
             desc="Mollit minim ut incididunt culpa minim velit tempor culpa. Minim culpa ea duis sit adipisicing adipisicing occaecat."
           />
         </div>
         <div className="border-b p-4 px-8 lg:border-x lg:border-t-0 lg:px-14 lg:py-10">
           <Analytics
-            head={67}
-            title={'events'}
+            head={30}
+            title={"events, escorts & private parties"}
             desc="Mollit minim ut incididunt culpa minim velit tempor culpa. Minim culpa ea duis sit adipisicing adipisicing occaecat."
           />
         </div>
         <div className="border-b p-4 px-8 lg:px-14 lg:py-10">
           <Analytics
-            head={24}
-            title={'clients'}
+            head={20}
+            title={"clients"}
             desc="Mollit minim ut incididunt culpa minim velit tempor culpa. Minim culpa ea duis sit adipisicing adipisicing occaecat."
-          /></div>
+          />
+        </div>
       </div>
     </section>
   )

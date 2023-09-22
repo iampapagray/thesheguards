@@ -20,7 +20,7 @@ export function Contact() {
       >
         <h2
           className={cn(
-            "flex pb-4 text-4xl lg:pb-0 lg:text-7xl",
+            "section-title flex pb-4 text-4xl lg:pb-0 lg:text-7xl",
             archivo.className
           )}
         >
@@ -29,10 +29,10 @@ export function Contact() {
         </h2>
 
         <div className="flex flex-col gap-2 lg:max-w-md">
-          <p>
+          <p className="text-foreground">
             <Link
               href={siteConfig.links.mail}
-              className="text-black lg:text-primary"
+              className="text-foreground lg:text-primary"
             >
               Send us an email
             </Link>{" "}

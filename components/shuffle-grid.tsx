@@ -1,29 +1,29 @@
-'use client'
+"use client"
 
-import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react"
+import { motion } from "framer-motion"
 
 const shuffle = (array: (typeof squareData)[0][]) => {
   let currentIndex = array.length,
-    randomIndex;
+    randomIndex
 
   while (currentIndex != 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex--
 
-    [array[currentIndex], array[randomIndex]] = [
+    ;[array[currentIndex], array[randomIndex]] = [
       array[randomIndex],
       array[currentIndex],
-    ];
+    ]
   }
 
-  return array;
-};
+  return array
+}
 
 const squareData = [
   {
     id: 1,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744071/samples/animals/three-dogs.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387619/Screenshot_20230914-170507_pdbjpz.png",
   },
   {
     id: 2,
@@ -31,61 +31,61 @@ const squareData = [
   },
   {
     id: 3,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744093/cld-sample.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387618/Screenshot_20230914-170328_equfxw.png",
   },
   {
     id: 4,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744094/cld-sample-3.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387617/Screenshot_20230914-170413_wljkac.png",
   },
   {
     id: 5,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744095/cld-sample-4.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387616/Screenshot_20230914-170527_dzusyp.png",
   },
   {
     id: 6,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744091/samples/look-up.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387613/Screenshot_20230914-170257_vm20f0.png",
   },
   {
     id: 7,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744088/samples/two-ladies.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387613/Screenshot_20230914-170357_c3dyid.png",
   },
   {
     id: 8,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744076/samples/food/spices.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387612/Screenshot_20230914-170105_w6cxr5.png",
   },
   {
     id: 9,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744074/samples/ecommerce/accessories-bag.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387611/Screenshot_20230914-170311_auintf.png",
   },
   {
     id: 10,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744070/samples/people/jazz.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387611/Screenshot_20230914-170209_rcm830.png",
   },
   {
     id: 11,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744071/samples/landscapes/architecture-signs.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387611/IMG_20230906_104330_102_iposty.jpg",
   },
   {
     id: 12,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744069/samples/bike.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387609/Screenshot_20230914-170235_yjtwtq.png",
   },
   {
     id: 13,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744068/samples/landscapes/girl-urban-view.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387601/IMG_20230829_122631_474_li6u4r.webp",
   },
   {
     id: 14,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744075/samples/imagecon-group.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387554/IMG_20230807_041815_056_pik7jd.webp",
   },
   {
     id: 15,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744067/samples/food/pot-mussels.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1692990171/group_photo_vvpcyq.jpg",
   },
   {
     id: 16,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692744066/samples/food/fish-vegetables.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692995982/she_group_llyrdy.jpg",
   },
-];
+]
 
 const generateSquares = () => {
   return shuffle(squareData).map((sq) => (
@@ -99,30 +99,30 @@ const generateSquares = () => {
         backgroundSize: "cover",
       }}
     ></motion.div>
-  ));
-};
+  ))
+}
 
 const ShuffleGrid = () => {
-  const timeoutRef = useRef<any>(null);
-  const [squares, setSquares] = useState(generateSquares());
+  const timeoutRef = useRef<any>(null)
+  const [squares, setSquares] = useState(generateSquares())
 
   useEffect(() => {
-    shuffleSquares();
+    shuffleSquares()
 
-    return () => clearTimeout(timeoutRef.current);
-  },[]);
+    return () => clearTimeout(timeoutRef.current)
+  }, [])
 
   const shuffleSquares = () => {
-    setSquares(generateSquares());
+    setSquares(generateSquares())
 
-    timeoutRef.current = setTimeout(shuffleSquares, 5000);
-  };
+    timeoutRef.current = setTimeout(shuffleSquares, 5000)
+  }
 
   return (
     <div className="grid h-[450px] w-full grid-cols-4 grid-rows-4 gap-1 lg:h-full">
       {squares.map((sq) => sq)}
     </div>
-  );
-};
+  )
+}
 
-export default ShuffleGrid;
+export default ShuffleGrid

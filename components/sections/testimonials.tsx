@@ -113,7 +113,7 @@ export function Testimonials() {
       >
         <h2
           className={cn(
-            "flex pb-4 text-4xl lg:pb-0 lg:text-7xl",
+            "section-title flex pb-4 text-4xl lg:pb-0 lg:text-7xl",
             archivo.className
           )}
         >
@@ -122,10 +122,10 @@ export function Testimonials() {
 
         <div className="flex gap-2 lg:max-w-lg">
           <Button variant={"outline"} className="px-2" onClick={scrollRight}>
-            <Icons.left className="" />
+            <Icons.left className="text-foreground" />
           </Button>
           <Button variant={"outline"} className="px-2" onClick={scrollLeft}>
-            <Icons.right className="" />
+            <Icons.right className="text-foreground" />
           </Button>
         </div>
       </div>
