@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
+import { archivo } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
+import styles from "@/styles/styles"
+
+import { RevealAndSlide } from "./animators/full-reveal"
 import { Icons } from "./icons"
 import { Button } from "./ui/button"
-import styles from "@/styles/styles"
-import { archivo } from "@/lib/fonts"
-import { RevealAndSlide } from "./animators/full-reveal"
-
 
 interface Props {
   title: string
@@ -14,23 +14,29 @@ interface Props {
   description: string
 }
 
-export function Service({title, summary, description}:Props) {
+export function Service({ title, summary, description }: Props) {
   return (
-    <div className={cn(
-      "group flex h-60 flex-col justify-between py-6 lg:h-80 lg:py-12",
-      styles.paddingX
-    )}>
+    <div
+      className={cn(
+        "group flex h-60 flex-col justify-between py-2 lg:h-80 lg:py-12",
+        styles.paddingX
+      )}
+    >
       <RevealAndSlide>
-        <h2 className={cn(
-          "text-2xl group-hover:text-primary lg:text-4xl",
-          archivo.className
-        )}>
+        <h2
+          className={cn(
+            "text-xl group-hover:text-primary lg:text-4xl",
+            archivo.className
+          )}
+        >
           {title}
         </h2>
       </RevealAndSlide>
-      
-      <RevealAndSlide><p className="">{summary}</p></RevealAndSlide>
-      
+
+      <RevealAndSlide>
+        <p className="text-base text-justify">{summary}</p>
+      </RevealAndSlide>
+
       <RevealAndSlide>
         <Button
           variant="outline"

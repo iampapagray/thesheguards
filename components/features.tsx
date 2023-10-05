@@ -10,11 +10,11 @@ import { JustReveal } from "./animators/reveal-only"
 import { Icons } from "./icons"
 
 export function Features() {
-  const features = ["disruption", "innovation", "transparency"]
+  const features = ["disruption", "integrity", "transparency"]
   const descriptions = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra magna ac. Varius duis at consectetur lorem donec massa. Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Adipiscing elit pellentesque habitant morbi. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. ",
-    "Nibh nisl condimentum id venenatis a condimentum vitae. Magna sit amet purus gravida quis blandit turpis cursus in. Eu lobortis elementum nibh tellus molestie nunc non blandit. Sagittis vitae et leo duis. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Iaculis at erat pellentesque adipiscing commodo. Aenean vel elit scelerisque mauris. Nisi scelerisque eu ultrices vitae auctor. Leo in vitae turpis massa sed elementum tempus egestas. Cras semper auctor neque vitae.",
+    "we are the first all-female security agency in the country and we are proud to have cause such a stir in the media. As female security operatives have been proven to often have a better ability to de-escalate a potentially violent situation between agressive males, we position ourselves to render exceptional services.",
+    "integrity is the most important quality of professional security guards have and we are proud to posses it. We, The SheGuards, value integrity and it comes with respect, reliability, honesty and being principled. We definitely stand by our promise to keep you and your guests safe and be discreet in our operations.",
+    "it is the quality of being easily seen through. This is very important because it helps create a stronger bond between the company and our clientele. Improving communication, collaborations, and trust is critical to the process of providing security. This helps our clients feel respoected, valued and safe with us.",
   ]
 
   const [active, setActive] = useState(0)
@@ -50,7 +50,7 @@ export function Features() {
                 />
                 <Icons.arrowDown
                   className={cn(
-                    "hidden stroke-[4px] ",
+                    "hidden stroke-2 ",
                     active == i ? "flex lg:hidden" : ""
                   )}
                 />

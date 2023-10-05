@@ -43,23 +43,23 @@ export function Hero() {
       <div className="grid w-full grid-cols-1 lg:h-1/3 lg:grid-cols-3">
         <div className="border-b p-4 px-8 lg:px-14 lg:py-10">
           <Analytics
-            head={4700}
+            head={"4700+"}
             title={"solo + collab protected"}
-            desc="Mollit minim ut incididunt culpa minim velit tempor culpa. Minim culpa ea duis sit adipisicing adipisicing occaecat."
+            desc="Whatever the size of your event, be rest assured that we got you covered. Even if we need to collab with other agencies."
           />
         </div>
         <div className="border-b p-4 px-8 lg:border-x lg:border-t-0 lg:px-14 lg:py-10">
           <Analytics
-            head={30}
+            head={"30+"}
             title={"events, escorts & private parties"}
-            desc="Mollit minim ut incididunt culpa minim velit tempor culpa. Minim culpa ea duis sit adipisicing adipisicing occaecat."
+            desc="we have handled many events just like the one you're planning. Hit us up and let's provide you with excellent services."
           />
         </div>
         <div className="border-b p-4 px-8 lg:px-14 lg:py-10">
           <Analytics
-            head={20}
+            head={"20+"}
             title={"clients"}
-            desc="Mollit minim ut incididunt culpa minim velit tempor culpa. Minim culpa ea duis sit adipisicing adipisicing occaecat."
+            desc="the number of brands and individuals that trust us is fast rising. It's your turn to do same. We are grateful to you all for choosing us."
           />
         </div>
       </div>
