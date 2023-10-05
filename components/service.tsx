@@ -18,7 +18,7 @@ export function Service({ title, summary, description }: Props) {
   return (
     <div
       className={cn(
-        "group flex h-60 flex-col justify-between py-2 lg:h-80 lg:py-12",
+        "group flex h-64 flex-col justify-between py-2 lg:h-80 lg:py-12",
         styles.paddingX
       )}
     >

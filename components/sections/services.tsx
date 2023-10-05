@@ -52,7 +52,7 @@ export function Services() {
           <Service
             title="clubs | pubs | lounge security"
             description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
-            summary="we manage and monitor large crowd behaviou to ensure safety of guest. We perform security procedures such as checking for weapons before entry. We also monitor and prevent stealing, damage to property and other crimes."
+            summary="we manage and monitor large-crowd behaviours to ensure safety of guest. We perform security procedures such as checking for weapons before entry. This helps prevent theft and other crimes."
           />
         </div>
         <div className="col-span-2 border-b lg:col-span-1">
