@@ -57,7 +57,7 @@ export function Services() {
         </div>
         <div className="col-span-2 border-b lg:col-span-1">
           <Service
-            title="party(private or public) security"
+            title="party (private or public) security"
             description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
             summary="we manage guest list to ensure only invited people are allowed at the premise. Crowd control and malicious activity monitoring is of major importance to us in events like these."
           />
