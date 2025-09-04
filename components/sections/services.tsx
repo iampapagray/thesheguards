@@ -37,39 +37,45 @@ export function Services() {
         <div className="col-span-2 w-full border-b lg:col-span-1 lg:border-r">
           <Service
             title="official meeting security"
-            description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
-            summary="offer advice and instructions to guests at meetings, assist guests find their way around the premises, monitor access points and deter crimes. We are proactive about suspicious behaviour and first line of defense in emergencies."
+            description="Professional security services for corporate meetings, conferences, and official gatherings. Our trained personnel ensure the safety and smooth operation of your important business events."
+            summary="We provide comprehensive meeting security including guest assistance, access control, premises monitoring, and crime deterrence. Our team is proactive in identifying suspicious behavior and serves as your first line of defense in emergency situations."
           />
         </div>
         <div className="col-span-2 w-full border-b lg:col-span-1">
           <Service
             title="escort services"
-            description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
-            summary="We guard and watch over our client closely. Often times by keeping them away from dangerous areas and people. This also includes ensuring that client vehicles or hotel rooms are safe before allowing clients to access them."
+            description="Close protection services for high-profile individuals requiring personal security. Our escort services ensure client safety through careful monitoring and threat assessment."
+            summary="We provide close protection by maintaining vigilant oversight of our clients, steering them away from potentially dangerous areas and individuals. Our services include thorough security checks of client vehicles and accommodations before use."
           />
         </div>
         <div className="col-span-2 border-b lg:col-span-1 lg:border-r ">
           <Service
             title="clubs | pubs | lounge security"
-            description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
-            summary="we manage and monitor large-crowd behaviours to ensure safety of guest. We perform security procedures such as checking for weapons before entry. This helps prevent theft and other crimes."
+            description="Specialized security services for nightlife venues including clubs, pubs, and lounges. Our team manages crowd control and maintains a safe environment for all patrons."
+            summary="We expertly manage and monitor large crowd behavior to ensure guest safety. Our comprehensive security procedures include thorough entry screening and weapon detection, effectively preventing theft and other criminal activities."
           />
         </div>
         <div className="col-span-2 border-b lg:col-span-1">
           <Service
             title="party (private or public) security"
-            description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
-            summary="we manage guest list to ensure only invited people are allowed at the premise. Crowd control and malicious activity monitoring is of major importance to us in events like these."
+            description="Comprehensive security solutions for both private and public party events. We ensure your celebrations remain safe and enjoyable for all attendees."
+            summary="We manage guest lists to ensure only authorized individuals access the premises. Our services prioritize crowd control and continuous monitoring for malicious activities, ensuring your event proceeds safely and smoothly."
           />
         </div>
-        <div className="col-span-2 border-b">
-          <Service
+        <div className="col-span-2 border-b lg:col-span-1 lg:border-r ">
+        <Service
+            title="security consultancy"
+            description="Expert security consultation services to assess and improve your current security measures. We provide strategic recommendations tailored to your specific needs and risk profile."
+            summary="We conduct comprehensive security assessments and provide professional recommendations to enhance your safety protocols. Our consultancy services include risk analysis, security system evaluation, and customized protection strategies for your unique requirements."
+          />
+        </div>
+        <div className="col-span-2 border-b lg:col-span-1">
+        <Service
             title="airport pickups & all kinds of events"
-            description="tempor sit irure consectetur quis do. Ad occaecat qui occaecat deserunt proident labore pariatur amet cillum id dolor. Veniam tempor anim minim est. Ex dolore ex voluptate eu enim irure quis do consectetur labore. Tempor pariatur Lorem culpa consequat dolore elit commodo incididunt. In cupidatat sint fugiat incididunt Lorem ex."
-            summary="we offer assistance in picking up your guests from the airport and escorting them to safe locations of your choosing. We are highly trained and prepared for all kinds of events you may be organizing."
+            description="Professional airport pickup services and comprehensive event security for all occasions. Our versatile team is equipped to handle diverse security needs across various event types."
+            summary="We provide secure airport pickup services for your guests, ensuring safe transport to designated locations. Our highly trained team offers comprehensive security solutions for all types of events you may be organizing, adapting to your specific requirements."
           />
         </div>
-        {/* <div className="col-span-2 ">all events</div> */}
       </div>
     </section>
   )
