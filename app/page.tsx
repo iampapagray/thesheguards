@@ -7,7 +7,7 @@ import { Testimonials } from "@/components/sections/testimonials"
 
 export default function IndexPage() {
   return (
-    <main className="grid items-center 2xl:container">
+    <main className="w-full 2xl:container">
       <Hero />
       <Services />
       <Featured />

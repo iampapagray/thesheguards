@@ -88,7 +88,7 @@ export function ContactForm() {
         <div className="flex w-full flex-col lg:flex-row">
           <div
             className={cn(
-              "flex w-full flex-col space-y-8 border-r py-8 lg:w-2/5",
+              "flex w-full flex-col space-y-8 border-b py-8 lg:w-2/5 lg:border-b-0 lg:border-r",
               styles.paddingX
             )}
           >
@@ -121,7 +121,7 @@ export function ContactForm() {
           </div>
           <div
             className={cn(
-              "flex w-full flex-col pb-2 lg:w-3/5 lg:pt-8",
+              "flex w-full flex-col py-8 lg:w-3/5 lg:pb-2",
               styles.paddingX
             )}
           >
