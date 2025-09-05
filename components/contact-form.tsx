@@ -2,6 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
+import { useState } from "react"
 import * as z from "zod"
 
 import { cn } from "@/lib/utils"
@@ -9,7 +10,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -31,6 +31,12 @@ const formSchema = z.object({
 })
 
 export function ContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null
+    message: string
+  }>({ type: null, message: '' })
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -40,19 +46,49 @@ export function ContactForm() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values)
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true)
+    setSubmitStatus({ type: null, message: '' })
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      })
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: 'success',
+          message: 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.'
+        })
+        form.reset()
+      } else {
+        const errorData = await response.json()
+        setSubmitStatus({
+          type: 'error',
+          message: errorData.error || 'Something went wrong. Please try again.'
+        })
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Network error. Please check your connection and try again.'
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <div className="flex flex-col lg:flex-row w-full">
+        <div className="flex w-full flex-col lg:flex-row">
           <div
             className={cn(
-              "flex w-full lg:w-2/5 flex-col space-y-8 border-r py-8",
+              "flex w-full flex-col space-y-8 border-r py-8 lg:w-2/5",
               styles.paddingX
             )}
           >
@@ -85,7 +121,7 @@ export function ContactForm() {
           </div>
           <div
             className={cn(
-              "flex w-full lg:w-3/5 flex-col pb-2 lg:pt-8",
+              "flex w-full flex-col pb-2 lg:w-3/5 lg:pt-8",
               styles.paddingX
             )}
           >
@@ -108,8 +144,23 @@ export function ContactForm() {
               )}
             />
 
-            <Button className="mt-8" type="submit">
-              Submit
+            {submitStatus.type && (
+              <div className={cn(
+                "mt-4 rounded-md border p-4",
+                submitStatus.type === 'success' 
+                  ? "border-green-200 bg-green-50 text-green-800"
+                  : "border-red-200 bg-red-50 text-red-800"
+              )}>
+                {submitStatus.message}
+              </div>
+            )}
+
+            <Button 
+              className="mt-8" 
+              type="submit" 
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Sending..." : "Submit"}
             </Button>
           </div>
         </div>
