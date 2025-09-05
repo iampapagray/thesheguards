@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { animate, motion, motionValue, transform } from "framer-motion"
+import { animate, motion, motionValue } from "framer-motion"
 
 import { archivo } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
@@ -20,31 +20,31 @@ interface testimony {
 
 const testimonials: testimony[] = [
   {
-    name: "Joseph Freeley",
+    name: "Akosua Mensah",
     message:
-      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
-    role: "Director, KKN Supply Management",
+      "The SheGuards provided exceptional security for our corporate retreat in Accra. Their professionalism and attention to detail gave us complete peace of mind. The team was discreet yet vigilant, allowing our executives to focus entirely on business discussions. I highly recommend their services for any high-level corporate event.",
+    role: "CEO, Mensah Holdings Ltd",
     image: "",
   },
   {
-    name: "Prince Leilani",
+    name: "Kwame Asante",
     message:
-      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
-    role: "Director, KKN Supply Management",
+      "We hired The SheGuards for our daughter's wedding reception, and they exceeded all expectations. Their crowd management was seamless, and they handled gate security with grace and efficiency. The guests felt safe and comfortable throughout the celebration. Outstanding service from a truly professional team.",
+    role: "Managing Director, Asante Construction Group",
     image: "",
   },
   {
-    name: "Frederick Jones",
+    name: "Ama Darko",
     message:
-      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
-    role: "Director, KKN Supply Management",
+      "As a frequent international traveler, I require reliable close protection services. The SheGuards have consistently provided top-tier escort security, ensuring my safety from airport pickup to hotel accommodation. Their female security personnel are highly trained and incredibly professional. I wouldn't trust anyone else with my security needs.",
+    role: "Deputy Minister of Trade & Industry",
     image: "",
   },
   {
-    name: "Patrick Thomspon",
+    name: "Nana Osei Bonsu",
     message:
-      "Magna et commodo ex reprehenderit. Ullamco cupidatat aliquip anim enim amet culpa. Aute proident tempor occaecat ea quis. Laboris et commodo sit pariatur adipisicing enim occaecat eiusmod occaecat elit irure excepteur adipisicing qui.",
-    role: "Director, KKN Supply Management",
+      "The SheGuards conducted a comprehensive security assessment for our hospitality chain across Ghana. Their consultancy recommendations were practical, cost-effective, and significantly improved our overall security posture. The team's expertise in risk analysis is unmatched. They are now our preferred security consultants.",
+    role: "Chairman, Golden Tulip Hotels Ghana",
     image: "",
   },
 ]
@@ -52,16 +52,20 @@ const testimonials: testimony[] = [
 export function Testimonials() {
   const [width, setWidth] = useState(0)
   const [scrollWidth, setScrollWidth] = useState(0)
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
   const box = useRef<any>()
   const carousel = useRef<any>()
   const startX = motionValue(0)
+  const autoScrollInterval = useRef<NodeJS.Timeout>()
 
   useEffect(() => {
-    setWidth(box.current.scrollWidth - box.current.offsetWidth)
-    setTimeout(() => {
-      getScrollWidth()
-    }, 1500)
+    if (box.current) {
+      setWidth(box.current.scrollWidth - box.current.offsetWidth)
+      setTimeout(() => {
+        getScrollWidth()
+      }, 1500)
+    }
 
     function getScrollWidth() {
       if (window.innerWidth < 600) {
@@ -75,28 +79,73 @@ export function Testimonials() {
     }
   }, [scrollWidth, width])
 
-  function scrollLeft() {
-    let currentX = startX.get()
-    if (Math.abs(currentX) < width) {
+  // Auto scroll functionality
+  useEffect(() => {
+    if (!isPaused && scrollWidth > 0) {
+      autoScrollInterval.current = setInterval(() => {
+        setCurrentIndex((prev) => {
+          const nextIndex = prev + 1
+          // Reset to start when we've shown all original testimonials
+          if (nextIndex >= testimonials.length) {
+            // Instantly jump to the beginning of the duplicated set
+            const resetPosition = 0
+            startX.set(0)
+            if (carousel.current) {
+              carousel.current.style.transform = `translateX(0px)`
+            }
+            return 0
+          }
+          return nextIndex
+        })
+      }, 4000) // Change testimonial every 4 seconds
+    }
+
+    return () => {
+      if (autoScrollInterval.current) {
+        clearInterval(autoScrollInterval.current)
+      }
+    }
+  }, [isPaused, scrollWidth, testimonials.length])
+
+  // Animate to current testimonial
+  useEffect(() => {
+    if (carousel.current && scrollWidth > 0) {
+      const targetX = -currentIndex * scrollWidth
       animate(
         carousel.current,
-        { x: [currentX, currentX - scrollWidth] },
-        { type: "spring", duration: 1 }
+        { x: targetX },
+        { type: "spring", duration: 0.8 }
       )
-      startX.set(startX.getPrevious() - scrollWidth)
+      startX.set(targetX)
     }
+  }, [currentIndex, scrollWidth])
+
+  function scrollLeft() {
+    setCurrentIndex((prev) => {
+      const nextIndex = prev + 1
+      if (nextIndex >= testimonials.length) {
+        return 0
+      }
+      return nextIndex
+    })
   }
 
   function scrollRight() {
-    let currentX = startX.get()
-    if (currentX != 0) {
-      animate(
-        carousel.current,
-        { x: [currentX, currentX + scrollWidth] },
-        { type: "spring", duration: 1 }
-      )
-      startX.set(startX.getPrevious() + scrollWidth)
-    }
+    setCurrentIndex((prev) => {
+      const nextIndex = prev - 1
+      if (nextIndex < 0) {
+        return testimonials.length - 1
+      }
+      return nextIndex
+    })
+  }
+
+  function handleMouseEnter() {
+    setIsPaused(true)
+  }
+
+  function handleMouseLeave() {
+    setIsPaused(false)
   }
 
   return (
@@ -128,7 +177,9 @@ export function Testimonials() {
 
       <motion.div
         ref={box}
-        className="flex w-screen overflow-hidden border-b lg:w-full"
+        className="flex w-full overflow-hidden border-b"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <motion.div
           ref={carousel}
