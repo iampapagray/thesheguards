@@ -108,7 +108,7 @@ const generateSquares = () => {
       key={sq.id}
       layout
       transition={{ duration: 1.5, type: "spring" }}
-      className="h-full w-full"
+      className="size-full"
       style={{
         backgroundImage: `url(${sq.src})`,
         backgroundSize: "cover",
