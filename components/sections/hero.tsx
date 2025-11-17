@@ -19,7 +19,7 @@ export function Hero() {
               We believe protection and asset management should be grounded on
               providing world-class security detail that is safe, excellent,
               effective, reliable and meets the specific needs of the client.
-              <span className="text-primary font-bold">
+              <span className="font-bold text-primary">
                 {" "}
                 That is who we are!
               </span>

@@ -24,7 +24,7 @@ export function Header() {
                   variant: "ghost",
                 })}
               >
-                <Icons.instagram className="h-5 w-5" />
+                <Icons.instagram className="size-5" />
                 <span className="sr-only">Instagram</span>
               </div>
             </Link>
@@ -39,7 +39,7 @@ export function Header() {
                   variant: "ghost",
                 })}
               >
-                <Icons.twitter className="h-5 w-5 " />
+                <Icons.twitter className="size-5" />
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
@@ -50,7 +50,7 @@ export function Header() {
                   variant: "ghost",
                 })}
               >
-                <Icons.mail className="h-5 w-5" />
+                <Icons.mail className="size-5" />
                 <span className="sr-only">Email</span>
               </div>
             </Link>
@@ -65,7 +65,7 @@ export function Header() {
                   variant: "ghost",
                 })}
               >
-                <Icons.phone className="h-5 w-5" />
+                <Icons.phone className="size-5" />
                 <span className="sr-only">Phone</span>
               </div>
             </Link>

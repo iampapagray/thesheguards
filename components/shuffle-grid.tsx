@@ -22,47 +22,47 @@ const shuffle = (array: (typeof squareData)[0][]) => {
 const squareData = [
   {
     id: 1,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387619/Screenshot_20230914-170507_pdbjpz.png",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1763408472/269_lh0rtj.jpg",
     position: "top",
   },
   {
     id: 2,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1692990171/group_photo_vvpcyq.jpg",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1763408472/1206_syu3rx.jpg",
     position: "top",
   },
   {
     id: 3,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387618/Screenshot_20230914-170328_equfxw.png",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1763408468/272_rmghcf.jpg",
     position: "top",
   },
   {
     id: 4,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387617/Screenshot_20230914-170413_wljkac.png",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1763408441/144927_bd4fsa.jpg",
     position: "top",
   },
   {
     id: 5,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387616/Screenshot_20230914-170527_dzusyp.png",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1763408437/4407_l7sghj.jpg",
     position: "top",
   },
   {
     id: 6,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387613/Screenshot_20230914-170257_vm20f0.png",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1763408437/15185_u9kjsl.jpg",
     position: "top",
   },
   {
     id: 7,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387613/Screenshot_20230914-170357_c3dyid.png",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1763408437/15242_eqdep9.jpg",
     position: "top",
   },
   {
     id: 8,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387612/Screenshot_20230914-170105_w6cxr5.png",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1763408435/2592_vwnw6d.jpg",
     position: "top",
   },
   {
     id: 9,
-    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1695387611/Screenshot_20230914-170311_auintf.png",
+    src: "https://res.cloudinary.com/dxpsehxqj/image/upload/v1763408434/1655_rpk899.jpg",
     position: "top",
   },
   {

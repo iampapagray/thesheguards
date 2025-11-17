@@ -20,33 +20,26 @@ interface testimony {
 
 const testimonials: testimony[] = [
   {
-    name: "Akosua Mensah",
+    name: "Oheneyere Gifty Anti",
     message:
-      "The SheGuards provided exceptional security for our corporate retreat in Accra. Their professionalism and attention to detail gave us complete peace of mind. The team was discreet yet vigilant, allowing our executives to focus entirely on business discussions. I highly recommend their services for any high-level corporate event.",
-    role: "CEO, Mensah Holdings Ltd",
+      "The SheGuards is a highly professional all-female security agency that continues to impress with their discipline, dedication, and excellence. Their work reflects the strength and capability of the Ghanaian woman, and I am proud to support their mission",
+    role: "Ghanaian journalist & broadcaster",
     image: "",
   },
   {
-    name: "Kwame Asante",
+    name: "Abeiku Santana",
     message:
-      "We hired The SheGuards for our daughter's wedding reception, and they exceeded all expectations. Their crowd management was seamless, and they handled gate security with grace and efficiency. The guests felt safe and comfortable throughout the celebration. Outstanding service from a truly professional team.",
-    role: "Managing Director, Asante Construction Group",
+      "Breaking Barriers, setting standards and carving a niche for your business is the best way to stand out... i recommend you to any well minded business or person who needs professional event security assistance, I really admire your dedication and commitment to excellence services",
+    role: "Media personality, entrepreneur & politician",
     image: "",
   },
   {
-    name: "Ama Darko",
+    name: "Aequitas Foundation",
     message:
-      "As a frequent international traveler, I require reliable close protection services. The SheGuards have consistently provided top-tier escort security, ensuring my safety from airport pickup to hotel accommodation. Their female security personnel are highly trained and incredibly professional. I wouldn't trust anyone else with my security needs.",
-    role: "Deputy Minister of Trade & Industry",
+      "The She Guards exemplifies discipline, integrity, and excellence. Their commitment to professionalism and their dedication to empowering young women aligns strongly with the values of the Aequitas Foundation. It has been a privilege to support their journey, and I commend their remarkable contribution to safety and women’s leadership in Ghana.",
+    role: "",
     image: "",
-  },
-  {
-    name: "Nana Osei Bonsu",
-    message:
-      "The SheGuards conducted a comprehensive security assessment for our hospitality chain across Ghana. Their consultancy recommendations were practical, cost-effective, and significantly improved our overall security posture. The team's expertise in risk analysis is unmatched. They are now our preferred security consultants.",
-    role: "Chairman, Golden Tulip Hotels Ghana",
-    image: "",
-  },
+  }
 ]
 
 export function Testimonials() {
@@ -199,11 +192,11 @@ export function Testimonials() {
                 <p>&ldquo;{testimony.message}&rdquo;</p>
 
                 <div className="flex items-center gap-2 pt-4">
-                  <Avatar className="h-10 w-10">
+                  <Avatar className="size-10">
                     <AvatarImage src={testimony.image} />
                     <AvatarFallback>
                       {testimony.name.charAt(0)}{" "}
-                      {testimony.name.split("")[1].charAt(0)}
+                      {testimony.name.split(" ")[1].charAt(0)}
                     </AvatarFallback>
                   </Avatar>
 
