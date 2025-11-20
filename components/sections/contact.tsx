@@ -57,7 +57,7 @@ export function Contact() {
               </div>
             </Link>
             <Link
-              href={siteConfig.links.twitter}
+              href={siteConfig.links.tiktok}
               target="_blank"
               rel="noreferrer"
             >
@@ -67,8 +67,8 @@ export function Contact() {
                   variant: "ghost",
                 })}
               >
-                <Icons.twitter className="h-5 w-5 " />
-                <span className="sr-only">Twitter</span>
+                <Icons.tiktok className="h-5 w-5 " />
+                <span className="sr-only">TikTok</span>
               </div>
             </Link>
             <Link

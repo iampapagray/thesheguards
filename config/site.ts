@@ -11,7 +11,7 @@ export const siteConfig = {
     // },
   ],
   links: {
-    twitter: "https://twitter.com/poizyn3",
+    tiktok: "https://www.tiktok.com/@thesheguards",
     mail: "mailto:thesheguards@gmail.com",
     phone: "tel:+233555209993",
     instagram: "https://instagram.com/thesheguards",

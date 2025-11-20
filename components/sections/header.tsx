@@ -29,7 +29,7 @@ export function Header() {
               </div>
             </Link>
             <Link
-              href={siteConfig.links.twitter}
+              href={siteConfig.links.tiktok}
               target="_blank"
               rel="noreferrer"
             >
@@ -39,8 +39,8 @@ export function Header() {
                   variant: "ghost",
                 })}
               >
-                <Icons.twitter className="size-5" />
-                <span className="sr-only">Twitter</span>
+                <Icons.tiktok className="size-5" />
+                <span className="sr-only">TikTok</span>
               </div>
             </Link>
             <Link href={siteConfig.links.mail} target="_blank" rel="noreferrer">
